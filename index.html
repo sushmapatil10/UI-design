@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Boxes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section class="bundle-section">
+      <h2 class="bundle-title">Bundle & Save</h2>
+
+      <!-- Box 1 -->
+      <div class="bundle-box" id="box1" onclick="selectBox(1, 195)">
+        <input type="radio" name="bundle" id="radio1" class="bundle-radio">
+        <div class="box-header">
+          <h3>1 Pair</h3>
+          <p>DKK 195.00</p>
+          <p>50% OFF</p>
+        </div>
+        <div class="box-content">
+          <p>Size: 
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+          </p>
+          <p>Color: 
+            <select>
+              <option>Red</option>
+              <option>Blue</option>
+              <option>Green</option>
+            </select>
+          </p>
+        </div>
+      </div>
+
+      <!-- Box 2 -->
+      <div class="bundle-box" id="box2" onclick="selectBox(2, 345)">
+        <input type="radio" name="bundle" id="radio2" class="bundle-radio">
+        <div class="box-header">
+          <h3>2 Pair</h3>
+          <p>DKK 345.00</p>
+          <p>40% OFF</p>
+        </div>
+        <div class="box-content">
+          <p>Size: 
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+          </p>
+          <p>Color: 
+            <select>
+              <option>Red</option>
+              <option>Blue</option>
+              <option>Green</option>
+            </select>
+          </p>
+        </div>
+      </div>
+
+      <!-- Box 3 -->
+      <div class="bundle-box" id="box3" onclick="selectBox(3, 528)">
+        <input type="radio" name="bundle" id="radio3" class="bundle-radio">
+        <div class="box-header">
+          <h3>3 Pair</h3>
+          <p>DKK 528.00</p>
+          <p>60% OFF</p>
+        </div>
+        <div class="box-content">
+          <p>Size: 
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+          </p>
+          <p>Color: 
+            <select>
+              <option>Red</option>
+              <option>Blue</option>
+              <option>Green</option>
+            </select>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="total-price" style="display: flex; justify-content: space-between; align-items: center;">
+      <p style="margin: 0; font-weight: bold; color: green;">Free 2 Day Shipping</p>
+      <p id="selected-price" style="margin: 0;">Total: DKK 0.00</p>
+    </div>
+    
+
+    <!-- Add to Cart Button -->
+    <button class="add-to-cart">+ Add to Cart</button>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

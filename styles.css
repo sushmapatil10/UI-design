@@ -1,0 +1,95 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f9f9f9;
+}
+
+main {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.bundle-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #008000;
+}
+
+.bundle-box {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.bundle-box.active {
+    border: 2px solid #008000; /* Active box border color */
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.3); /* Active shadow */
+    background-color: #f0fff0; /* Light green background */
+}
+
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-header h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.box-header p {
+    font-size: 14px;
+    color: #555;
+}
+
+.box-content {
+    display: none;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed #ccc;
+    transition: all 0.3s ease; /* Smooth expand */
+}
+
+.box-content p {
+    margin-bottom: 10px;
+}
+
+.bundle-box.active .box-content {
+    display: block; /* Show content when active */
+}
+
+.box-content select {
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-to-cart {
+    background-color: #008000;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.add-to-cart:hover {
+    background-color: #006600;
+}
